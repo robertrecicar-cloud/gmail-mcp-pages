@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gmail MCP – Personal Integration</title>
+<style>
+  :root{--fg:#111111;--muted:#5b6470;--bg:#ffffff;--accent:#1a73e8;--card:#f6f8fa;--border:#e1e4e8}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  main{max-width:780px;margin:0 auto;padding:56px 24px 88px}
+  h1{font-size:2rem;margin:0 0 .3em;letter-spacing:-.02em}
+  h2{font-size:1.2rem;margin:2.2em 0 .5em;border-bottom:1px solid var(--border);padding-bottom:.3em}
+  .lead{color:var(--muted);font-size:1.06rem}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px 20px;margin:1.6em 0}
+  a{color:var(--accent)}
+  code{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:1px 5px;font-size:.9em}
+  footer{margin-top:3.2em;padding-top:1.2em;border-top:1px solid var(--border);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+  <h1>Gmail MCP – Personal Integration</h1>
+  <p class="lead">A private, single-user integration that connects one personal Gmail account to a locally running AI assistant (Bionic) through the Model Context Protocol (MCP).</p>
+
+  <div class="card">
+    <strong>Personal use only.</strong> This application is operated by and for a single individual — its owner. It is not distributed, not offered as a service, and has no other users.
+  </div>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Reads Gmail messages and threads on request</li>
+    <li>Searches the mailbox using standard Gmail search syntax</li>
+    <li>Formats message content for display</li>
+    <li>Marks messages as read</li>
+    <li>Handles attachments when asked</li>
+  </ul>
+
+  <h2>How it works</h2>
+  <p>All processing happens locally on the owner's own computer. Access to Gmail is granted through Google OAuth 2.0 and limited to the scopes <code>gmail.readonly</code> and <code>gmail.modify</code>. Credentials are stored only on the owner's device.</p>
+
+  <h2>Privacy</h2>
+  <p>See the <a href="privacy.html">Privacy Policy</a> for details on what data is accessed, how it is used and stored, and how the grant can be revoked.</p>
+
+  <footer>
+    <p>Contact: <a href="mailto:robert.recicar@gmail.com">robert.recicar@gmail.com</a></p>
+    <p>Last updated: 16 October 2026</p>
+  </footer>
+</main>
+</body>
+</html>
